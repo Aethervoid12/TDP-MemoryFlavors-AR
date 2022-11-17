@@ -11,18 +11,31 @@ public class QuizManager : MonoBehaviour
     public int currentQuestion;
 
     public TextMeshProUGUI QuestionText;
+    //To find the total number of question is there in the quiz.
+    public int totalQuestion = 0;
+    //To find the number of right answer you got.
+    public int rightAnswer = 0;
+    public GameObject EndTemplate;
+    public TextMeshProUGUI CorrectAns;
+    public TextMeshProUGUI TotalAns;
 
-    public int correctAnswers = 0;
     public void Start()
     {
         generateQuestion();
+    }
+    public void Update()
+    {
+        if (QnA.Count == 0)
+        {
+            quizDone();
+            Debug.Log("FINIHSED QUIZ");
+        }
     }
 
     public void correct()
     {
         QnA.RemoveAt(currentQuestion);
         generateQuestion();
-        correctAnswers = correctAnswers + 1;
     }
 
     void SetAnswers()
@@ -45,4 +58,26 @@ public class QuizManager : MonoBehaviour
         QuestionText.text = QnA[currentQuestion].Question;
         SetAnswers();
     }
+    public void TickAnswer()
+    {
+        rightAnswer++;
+        Debug.Log(rightAnswer + "rightAnswer");
+
+        totalQuestion++;
+        Debug.Log("totalQuestion" + totalQuestion);
+    }
+    public void XAnswer()
+    {
+        totalQuestion++;
+        Debug.Log("totalQuestion" + totalQuestion);
+    }
+    public void quizDone()
+    {
+        Debug.Log("All Question has been answered");
+        //Debug.Log(rightAnswers + "/" + answeredAnswers);
+        EndTemplate.SetActive(true);
+        CorrectAns.text = rightAnswer.ToString();
+        TotalAns.text = totalQuestion.ToString();
+    }
+
 }
