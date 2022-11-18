@@ -7,6 +7,7 @@ public class CameraController : MonoBehaviour
 {
     public void ToggleCamera()
     {
+        //If Camera is Enabled, Disable it, otherwise Enable it
         if (VuforiaBehaviour.Instance.enabled)
         {
             VuforiaBehaviour.Instance.VideoBackground.StopVideoBackgroundRendering();

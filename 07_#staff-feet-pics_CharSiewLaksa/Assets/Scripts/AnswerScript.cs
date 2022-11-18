@@ -10,12 +10,14 @@ public class AnswerScript : MonoBehaviour
     {
         if(isCorrect)
         {
+            //if answer is correct, check as correct answer
             quizManager.TickAnswer();
             Debug.Log("Coreect Answer");
             quizManager.correct();
         }
         else
         {
+            //if answer is incorrect, check as incorrect answer
             quizManager.XAnswer();
             Debug.Log("Wrong Answer");
             quizManager.correct();

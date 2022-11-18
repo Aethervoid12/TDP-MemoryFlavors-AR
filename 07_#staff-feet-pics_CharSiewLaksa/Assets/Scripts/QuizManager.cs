@@ -21,6 +21,7 @@ public class QuizManager : MonoBehaviour
 
     public void Start()
     {
+        //randomize questions
         generateQuestion();
     }
     public void Update()
@@ -34,6 +35,7 @@ public class QuizManager : MonoBehaviour
 
     public void correct()
     {
+        //remove previous question and generate new one
         QnA.RemoveAt(currentQuestion);
         generateQuestion();
     }
