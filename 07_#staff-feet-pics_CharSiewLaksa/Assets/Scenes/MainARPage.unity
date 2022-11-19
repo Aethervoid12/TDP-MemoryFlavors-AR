@@ -1678,7 +1678,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1245478350}
   m_Father: {fileID: 1145013403}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1892,7 +1893,6 @@ RectTransform:
   - {fileID: 679529140}
   - {fileID: 885878217}
   - {fileID: 543346500}
-  - {fileID: 2073207055}
   m_Father: {fileID: 1742151162}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2314,6 +2314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07fa2f8e811a0bf4e839df46ebcd153e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  model: {fileID: 241845391}
 --- !u!114 &568937003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2362,18 +2363,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: CameraController, Assembly-CSharp
         m_MethodName: ToggleCamera
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 341645574}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3297,7 +3286,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2073207055}
   m_Father: {fileID: 543346500}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3492,7 +3482,6 @@ RectTransform:
   - {fileID: 118307742}
   - {fileID: 75829548}
   - {fileID: 1145013403}
-  - {fileID: 1245478350}
   m_Father: {fileID: 1742151162}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3835,15 +3824,15 @@ RectTransform:
   m_GameObject: {fileID: 1245478349}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15801984, y: 0.15801984, z: 0.15801984}
+  m_LocalScale: {x: 0.15801986, y: 0.15801986, z: 0.15801986}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1060005043}
-  m_RootOrder: 3
+  m_Father: {fileID: 465770760}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -61.817383, y: 0.07897949}
+  m_AnchoredPosition: {x: 8.18261, y: 0.07897949}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1245478351
@@ -5431,15 +5420,15 @@ RectTransform:
   m_GameObject: {fileID: 2073207054}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15801984, y: 0.15801984, z: 0.15801984}
+  m_LocalScale: {x: 0.15801986, y: 0.15801986, z: 0.15801986}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 506335288}
-  m_RootOrder: 3
+  m_Father: {fileID: 869654675}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -62.733856, y: -1.1061401}
+  m_AnchoredPosition: {x: 7.266144, y: -1.1061401}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2073207056
